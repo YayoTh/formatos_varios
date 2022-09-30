@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+    <html lang="es-ES">
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Etiquetas Generales</title>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                #contenedor{
+                    width: 80%;
+                    margin: 20px auto 0 auto;
+                }
+                div.tabla table, th, td{
+                    border: 2px solid red;
+                    border-collapse: collapse;
+                }
+                div.tabla table caption{
+                    background-color: aquamarine;
+                    color: blue;
+                    font-weight: bold;
+                }
+                div.tabla table thead tr{
+                    height: 25px;
+                    background-color: bisque;
+                }
+                div.tabla table tbody tr:hover{
+                    background-color: #FF1493;
+                }
+                div.tabla table tfoot td{
+                    text-align: center;
+                    background-color: aquamarine;
+                    color: blue;
+                }
+                table{
+                    width: 100%;
+                }
+                th{
+                    width: 25%;
+                }
+                /******************************Tabla Uno***************/
+                hr{
+                    color: blue;
+                    width: 75%;
+                    margin: 20px auto 20px auto;
+                }
+                div.TablaDos table{
+                    width: 100%;
+                }
+                div.TablaDos table, th, td{
+                    border: 2px solid red;
+                    border-collapse: collapse;
+                }
+                div.TablaDos table caption{
+                    background-color: rgb(236, 255, 127);
+                    color: rgb(255, 0, 0);
+                    font-weight: bold;
+                }
+                div.TablaDos thead tr th{
+                    width: 25%;
+                }
+                div.TablaDos{
+                    overflow-x: scroll;
+                    width: 100%;
+                }
+                div.TablaDos table tfoot td{
+                    text-align: center;
+                    background-color: rgb(236, 255, 127);
+                    color: rgb(255, 0, 0);
+                }
+                div.TablaDos table tbody tr:hover{
+                    background-color: #FF1493;
+                }
+                div.TablaDos table thead tr{
+                    height: 25px;
+                    background-color: bisque;
+                }
+                /******************************Tabla Dos***************/
+            </style>
+        </head>
+    <body>
+        <div id="contenedor">
+            <div class="tabla">
+                <table>
+                    <caption>Tabla Uno</caption>
+                    <thead>
+                        <tr><!--Row igual a fila, table igual a tabla-->
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>C.P.</th>
+                            <th>Varios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jesús</td>
+                            <td>Martin pero</td>
+                            <td>09007</td>
+                            <td>Sugerencias...</td>
+                        </tr>
+                        <tr>
+                            <td>Jesús Ángel</td>
+                            <td>Pérez</td>
+                            <td>09006</td>
+                            <td>Sugerencias</td>
+                        </tr>
+                        <tr>
+                            <td>Pili</td>
+                            <td>Martín</td>
+                            <td>09001</td>
+                            <td>Sugerencias</td>
+                        </tr>
+                        <tr>
+                            <td>Mariví</td>
+                            <td>Victoria</td>
+                            <td>09006</td>
+                            <td>Sugerencias...</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Fin de Tabla Uno</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <hr />
+            <div class="TablaDos">
+                <table>
+                    <caption>Tabla Dos</caption>
+                    <thead>
+                        <tr>
+                            <th>Campo Uno</th>
+                            <th>Campo Dos</th>
+                            <th>Campo Tres</th>
+                            <th>Campo Cuatro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">D Primero</td>
+                            <td>D Segundo</td>
+                            <td>D Tercero</td>
+                            <td>D Cuarto</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">D Quinto</td>
+                            <td>D Sexto</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">D Septimo</td>
+                            <td>D Octavo</td>
+                            <td>D Noveno</td>
+                            <td>D Decimo</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">D Quinto</td>
+                            <td>D Sexto</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">D Primero</td>
+                            <td>D Segundo</td>
+                            <td>D Tercero</td>
+                            <td>D Cuarto</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">D Quinto</td>
+                            <td>D Sexto</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">D Primero</td>
+                            <td>D Segundo</td>
+                            <td>D Tercero</td>
+                            <td>D Cuarto</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">D Quinto</td>
+                            <td>D Sexto</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Pie de Tabla Dos</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <picture>
+                
+            </picture>
+            <object data="" type="">
+
+            </object>
+            <object data="" type="">
+
+            </object>
+        </div>
+    </body>
+</html>
